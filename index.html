@@ -32,11 +32,7 @@
 
     <!-- favicon.ico. Place these in the root directory. -->
     <link rel="shortcut icon" href="favicon.ico">
-    <style>
-    body {
-        background-color: #fff5d7;
-      }
-    </style>
+    
 </head>
 
 <body>
@@ -67,16 +63,31 @@
             box-shadow: 0 25px 40px rgba(0, 0, 0, 0.5);
         }
         .back-btn {
-            position: fixed;
+            position: static;
             top: 0;
             left: 0;
-            width: 140px;
-            border: 3px solid #73AD21;
+            z-index: 1;
+            background-color: #ff5e6c; 
+            border: none;
+            border-radius: 8px;
+            margin: 5px 3px;
+            color: white;
+            padding: 10px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 15px;
+            transition: 0.3s;
           }
+        .back-btn:hover {
+            z-index: 0;
+            transform: scale(0.9);
+            }
+
     </style>
 
     <div>
-        <button type="button" class="back-btn">< Back</button>
+        <button type="button" class="back-btn" onclick="window.location.href='https://bakejobs.com';">< Back</button>
     </div>
 
     <!-- Header -->
