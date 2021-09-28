@@ -26,7 +26,7 @@
 
     <!-- The compiled CSS file -->
     <link rel="stylesheet" href="css/production.css">
-    
+
     <!-- Web fonts -->
     <link href="https://fonts.googleapis.com/css?family=Karla:400,700" rel="stylesheet">
 
@@ -41,8 +41,6 @@
 </head>
 
 <body>
-
-    <button type="button" class="btn btn-warning">< Back</button>
     
     <style>
         .headng {
@@ -69,7 +67,18 @@
             transform: scale(1.075);
             box-shadow: 0 25px 40px rgba(0, 0, 0, 0.5);
         }
+        div.back-btn {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100px;
+            border: 3px solid #73AD21;
+          }
     </style>
+
+    <div class="back-btn">
+        <button type="button" class="btn btn-warning">< Back</button>
+    </div>
 
     <!-- Header -->
     <header class="pt2 pb1 align--center">
